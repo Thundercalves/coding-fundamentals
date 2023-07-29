@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: whitesmoke;
+
+  }
+
+
+h1, p {
+  padding: 10px;
+}
+
+  /* mobile */
+
+  @media (max-width: 640px) { 
+    .mobile {
+        display: block;
+        background: red;
+        height: 100vh;
+    }
+
+    .tablet{
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+  }
+
+    
+  /* tablet */
+  @media (min-width:640px){
+    .mobile {
+        display: none;
+      
+    }
+
+    .tablet{
+        display: block;
+        background: green;
+        height: 100vh;
+        
+      
+    }
+
+    .desktop {
+        display: none;
+    }
+
+  }
+  
+   /* desktop */
+  @media (min-width: 1024px) {
+    .mobile {
+        display: none;
+      
+    }
+
+    .tablet{
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        background: blue;
+        color: white;
+        height: 100vh;
+    
+    }
+
+  
+  }
